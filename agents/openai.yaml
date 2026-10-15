@@ -1,0 +1,6 @@
+interface:
+  display_name: "Ming-design loop"
+  short_description: "分階段製作線稿與 UIUX、接收外部設計，透過 Figma 交接 MingMing"
+  default_prompt: "使用 $ming-design-loop，先讀取本專案需求與現有設計，選擇適用入口，完成本次 UIUX 設計與可驗證的開發交接。"
+policy:
+  allow_implicit_invocation: true
