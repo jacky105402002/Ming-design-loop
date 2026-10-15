@@ -2,7 +2,7 @@
 name: ming-design-loop
 description: 使用 Ming-design loop 製作或接續 UIUX 設計，從需求轉成流程線稿、精緻介面與可交接的 Figma 設計；支援外部設計接收、局部修改及與 MingMing 開發流程銜接。純討論只回答問題，不自行開始設計或開發。
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Ming-design loop
@@ -19,7 +19,7 @@ metadata:
 ## 開始與接續
 
 1. 確認產品專案／設計資料夾、範圍、現有紀錄、需求來源與本次交付。續作先讀專案的 `design-record.md` 及其引用的設計基準，核對實際文件，避免從頭開始。
-2. 若與 MingMing 搭配，讀產品現有的 `tasks/current/state.json`、交接與 feature spec；依 [MingMing 接口](references/mingming-handoff.md)接續。以該專案版本為準。
+2. 若與 MingMing 搭配，讀產品現有的 `tasks/current/state.json`、交接與 feature spec；依 [MingMing 接口](references/mingming-handoff.md)接續。以該專案版本為準，由主線協調設計接入與返回；設計檢查報告交給主線按其證據格式接收，不直接視為開發節點通過。
 3. 選擇入口與深度，記錄依據；有既有答案不重問。入口、深度與交付範圍是三個不同選項。
 
 | 入口 | 適用情形 | 從哪裡開始 |

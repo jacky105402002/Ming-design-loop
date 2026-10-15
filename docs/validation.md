@@ -1,8 +1,21 @@
-# 1.0.0 驗證說明
+# 驗證說明
+
+## 1.0.1 — 2026-10-15
+
+本次僅調整文件與模板。查核 MingMing v1.1.3 的發布說明、Design／Implementation Ready、UIUX 角色、證據政策、元件資源與 evidence recorder 參數；來源 commit 為 `e91042baf58f1bf8325ebd562bc5e5e2fed36724`，GitHub main 與 v1.1.3 標籤一致。
+
+- 技能通過 `quick_validate.py`；儲存庫相對文件連結、版本欄位及 `git diff --check` 檢查通過。
+- 記錄命令範例的參數已對照 v1.1.3 recorder 原始碼及導入文件；沒有在真實產品執行範例，也沒有產生虛構的通過證據。
+- 作者 self-review 核對六個交接情境：獨立使用不需主線檔案；完整外稿可略過重畫但保留檢查；尚未拆 Node 可先設計；Figma 雲端改稿仍須核對；未知資安要求不能自行定案；非 React 不套用 React 候選清單。
+- 未新增執行腳本、依賴或主線 schema。本次未重跑靜態安全掃描；下方掃描結果明確限定於 1.0.0，不能當成本版掃描結果。
+
+以上為格式檢查、來源對照與作者情境推演，不是獨立行為測試。真實 Figma 寫入、MingMing 產品端到端交接、無障礙及資安驗收仍未驗證。
+
+## 1.0.0 歷史驗證紀錄
 
 日期：2026-10-15。以下區分技能文件驗證與實際產品驗證。
 
-## 已執行的檢查
+### 已執行的檢查
 
 - 原始 11 個技能檔案通過 skill-creator 的 `quick_validate.py`，安裝後再次通過。
 - 技能內部 12 個相對連結、UI metadata 與檔案結構檢查通過。
@@ -11,7 +24,7 @@
 
 情境推演為同一 AI 作者的 self-review，不是獨立審查，也不是在實際 Figma 或產品中執行的測試。
 
-## 靜態掃描
+### 靜態掃描
 
 scan-skill-security 1.0.2 對原始 11 個技能檔案作靜態檢查，coverage 完整、未執行內容。原始結果是 **BLOCK，2 個 high findings**，沒有將掃描結果改寫為零告警：
 
@@ -22,7 +35,7 @@ scan-skill-security 1.0.2 對原始 11 個技能檔案作靜態檢查，coverage
 
 此覆核不是獨立資安審查，也不是安全認證。技能沒有執行腳本、憑證、安裝器或網路傳送實作；工具使用仍受每次任務授權與環境權限限制。
 
-## 研究來源範圍
+### 研究來源範圍
 
 - Anthropic frontend-design：固定 commit `dbd4588f9e1033efb41dad4bef2f7947c8993d44` 的 SKILL.md；掃描沒有命中規則。
 - Impeccable：固定 commit `ff8e1495979a33086089c9c9f7cfea2ddc386e97` 的 SKILL.md；原始掃描命中 `SECRET_COLLECTION`。作者讀取描述上下文後，判斷是設計 extract／tokens 詞彙造成的疑似誤判。來源另有首次執行下載 binary 的行為說明，本次未執行、未採用。
@@ -35,7 +48,7 @@ scan-skill-security 1.0.2 對原始 11 個技能檔案作靜態檢查，coverage
 - Anthropic：`d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3`。
 - Impeccable：`58c0252bca04521de87007aeb495f7ec99dc4c7341bc890fe82b6d577573af91`。
 
-## 尚未驗證
+### 尚未驗證
 
 - 真實 Figma 的連線、寫入、字型、原型與恢復流程。
 - 與產品專案的 MingMing 端到端交接與實作還原。

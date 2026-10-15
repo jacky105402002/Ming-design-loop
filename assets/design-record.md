@@ -2,12 +2,13 @@
 
 > 模板。這份文件是設計進度唯一來源；主線進度留在既有開發工作流。
 
-- workflow_version：1.0.0
+- workflow_version：1.0.1
 - design_id：
 - record_mode：template（開始真實任務時改為 active）
 - project_root：
 - brief_reference：
 - main_workflow_reference：
+- main_workflow_version（獨立使用可記不適用）：
 - entry：new-design／continue-wireframe／receive-external
 - depth：lean／full
 - delivery：wireframe-only／full-design／handoff-only／review-only／scoped-change

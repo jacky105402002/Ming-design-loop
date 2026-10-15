@@ -1,6 +1,6 @@
 # Ming-design-loop
 
-**Ming-design loop v1.0.0** 是可獨立使用的 UIUX 設計工作流，也能透過文件與證據交接給 MingMing 或其他開發團隊。
+**Ming-design loop v1.0.1** 是可獨立使用的 UIUX 設計工作流，也能透過文件與證據交接給 MingMing 或其他開發團隊。
 
 適合需要自行完成設計、接續既有線稿，或與外部 UIUX 設計師合作的專案。線稿與精緻 UI 分階段，使用者體驗的檢查貫穿整個流程。
 
@@ -22,10 +22,10 @@
 Windows PowerShell 的首次安裝範例：
 
 ```powershell
-git clone --branch v1.0.0 --depth 1 https://github.com/jacky105402002/Ming-design-loop.git "$env:USERPROFILE\.codex\skills\ming-design-loop"
+git clone --branch v1.0.1 --depth 1 https://github.com/jacky105402002/Ming-design-loop.git "$env:USERPROFILE\.codex\skills\ming-design-loop"
 ```
 
-已安裝同名技能時先比較差異與備份，不直接覆蓋個人修改。也可從 GitHub 的 `v1.0.0` 標籤下載 ZIP，再放到上述位置。
+已安裝同名技能時先比較差異與備份，不直接覆蓋個人修改。也可從 GitHub 的 `v1.0.1` 標籤下載 ZIP，再放到上述位置。
 
 在技能已載入的聊天使用 `$ming-design-loop`；若尚未出現在技能清單，於新聊天確認載入情形。
 
@@ -75,7 +75,7 @@ Figma 是可選的設計工具；要求可編輯 Figma 交付時，需具備對�
 
 完整交付要求適用的可編輯文字／圖層、元件、版面規則與驗證證據。連線受阻時可繼續規格工作，但不把尚未完成的 Figma 稿標記為完成。
 
-MingMing 是可選的開發接續方式。本版採文件層接口，沿用產品已導入的 MingMing 版本，不自動升級、不更改主線狀態格式，也沒有背景自動同步。
+MingMing 是可選的開發接續方式。本版已對照 MingMing 1.1.3 的文件層接口，補上證據接收、適用要求與元件對照；沿用產品已導入的 MingMing 版本，不自動升級、不更改主線狀態格式，也沒有背景自動同步。
 
 ## 文件與模板
 
@@ -96,6 +96,6 @@ MingMing 是可選的開發接續方式。本版採文件層接口，沿用產�
 
 ## 版本與驗證
 
-目前版本：**1.0.0**。詳見 [版本紀錄](CHANGELOG.md)與[驗證說明](docs/validation.md)。
+目前版本：**1.0.1**。詳見 [版本紀錄](CHANGELOG.md)與[驗證說明](docs/validation.md)。
 
-已完成技能基本格式、文件引用與套件結構檢查，以及 12 個情境的作者自我審查。實際 Figma 寫入、原型操作與 MingMing 產品專案端到端交接尚未驗證；文件通過不代表實際產品、無障礙或資安驗收通過。
+已完成技能基本格式、文件引用與套件結構檢查，以及本次交接情境的作者自我審查（初版另有 12 個情境推演）。實際 Figma 寫入、原型操作與 MingMing 產品專案端到端交接尚未驗證；文件通過不代表實際產品、無障礙或資安驗收通過。
